@@ -4938,11 +4938,12 @@ a {
       height: 43px;
       line-height: 33px;
       padding-bottom: 0; }
-  .btn--gray, .btn--blue {
-    line-height: 42px; }
-    .btn--gray:active, .btn--blue:active {
-      line-height: 32px;
-      height: 42px; }
+  .btn--blue {
+    line-height: 45px;
+    height: 45px; }
+    .btn--blue:active {
+      height: 45px;
+      line-height: 35px; }
   .callback-form .btn.btn--gray, .callback-form .btn.btn--blue {
     line-height: 53px;
     height: 53px; }
@@ -5264,7 +5265,7 @@ a {
   .reviews .col-66 {
     margin-bottom: 40px; }
   .reviews-navigations {
-    padding: 10px 0; }
+    padding: 25px 0; }
   .page__features .container {
     padding: 0 15px; }
   .features__item {
