@@ -4022,7 +4022,7 @@ a {
       display: inline-block;
       vertical-align: middle; }
     .btn--submit span {
-      padding: 0px 34px;
+      padding: 0px 25px;
       text-transform: uppercase;
       font-size: 14px; }
     .btn--submit i {
@@ -4749,6 +4749,7 @@ a {
   position: relative; }
 
 .mobile-nav-btn {
+  cursor: pointer;
   outline: none;
   padding: 0;
   background-color: transparent;
@@ -4960,6 +4961,7 @@ a {
   .social li {
     margin-left: 0px; }
     .social li a {
+      box-sizing: border-box;
       width: 28px;
       height: 28px;
       line-height: 24px; }
