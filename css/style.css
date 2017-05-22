@@ -3972,14 +3972,15 @@ a {
     background-color: #3A479C;
     border-top: none;
     background: linear-gradient(#3A479C 0%, #172188 100%);
-    box-shadow: none; }
+    box-shadow: none;
+    line-height: 54px; }
     .btn--blue:after {
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      height: 8px;
+      height: 9px;
       background-color: #080c37;
       opacity: .5; }
     .btn--blue:hover {
@@ -4937,6 +4938,11 @@ a {
       height: 43px;
       line-height: 33px;
       padding-bottom: 0; }
+  .btn--gray, .btn--blue {
+    line-height: 42px; }
+    .btn--gray:active, .btn--blue:active {
+      line-height: 32px;
+      height: 42px; }
   .callback-form .btn.btn--gray, .callback-form .btn.btn--blue {
     line-height: 53px;
     height: 53px; }
