@@ -4600,14 +4600,14 @@ a {
   font-size: 14px;
   margin: 30px 0; }
 
-.text-reviews time {
+.text-reviews .time {
   color: #959595; }
-  .text-reviews time i {
+  .text-reviews .time i {
     margin-right: 10px;
     color: black;
     font-size: 22px;
     vertical-align: middle; }
-    .text-reviews time i + span {
+    .text-reviews .time i + span {
       vertical-align: middle; }
 
 .reviews-navigations {
