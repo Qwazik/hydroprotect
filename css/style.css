@@ -3847,6 +3847,12 @@ a {
 /* -------------------------------
 	elements
 ------------------------------- */
+h1 {
+  color: #071931;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 52px; }
+
 h2, .h2 {
   color: #071931;
   font-size: 60px;
@@ -3909,7 +3915,8 @@ a {
   width: auto;
   border: none;
   background: none;
-  vertical-align: top; }
+  vertical-align: top;
+  box-sizing: border-box; }
   .btn--dashed {
     border: 1px dashed #ffffff;
     border-radius: 16px;
@@ -3931,7 +3938,6 @@ a {
     position: relative;
     overflow: hidden;
     box-shadow: 0px 0px 0px 1px #AEAEAF;
-    text-shadow: 0 0 1px white;
     line-height: 53px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -3939,14 +3945,16 @@ a {
     font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
-    right: 1px; }
+    right: 1px;
+    font-weight: normal;
+    color: #3e3e41; }
     .btn--gray:hover, .btn--blue:hover {
       box-shadow: 0px 0px 0px 1px #c8c8c8;
       background: linear-gradient(#e8e8e8 0%, #d3d3d4 100%); }
       .btn--gray:hover:after, .btn--blue:hover:after {
         background-color: #AEAEAE; }
     .btn--gray:active, .btn--blue:active {
-      height: 53px;
+      height: 63px;
       line-height: 63px; }
       .btn--gray:active:after, .btn--blue:active:after {
         display: none; }
@@ -3969,6 +3977,7 @@ a {
       background-color: #959595;
       opacity: .5; }
   .btn--blue {
+    color: white;
     background-color: #3A479C;
     border-top: none;
     background: linear-gradient(#3A479C 0%, #172188 100%);
@@ -4786,6 +4795,71 @@ a {
     .mobile-nav-btn span:first-child {
       margin-top: 0; }
 
+.inner__header {
+  padding: 60px 0; }
+
+.main-cart {
+  margin-bottom: 100px; }
+  .main-cart .price {
+    vertical-align: middle;
+    font-size: inherit;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 24px; }
+    .main-cart .price + i {
+      font-size: 20px;
+      margin-left: 5px;
+      display: inline-block;
+      vertical-align: middle; }
+  .main-cart__table {
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+    width: 100%; }
+    .main-cart__table .dtc {
+      vertical-align: middle;
+      border-bottom: 1px solid #e6e6e6;
+      border-left: none;
+      border-right: none;
+      padding: 12px 0;
+      font-size: 14px; }
+    .main-cart__table .table-header {
+      font-weight: bold; }
+      .main-cart__table .table-header .dtc {
+        font-size: 16px; }
+    .main-cart__table .table-body {
+      display: table-row-group; }
+  .main-cart .dtc:first-child {
+    text-align: left; }
+  .main-cart__footer {
+    text-align: right;
+    font-weight: bold; }
+    .main-cart__footer .sum {
+      padding: 45px 0;
+      font-size: 24px; }
+      .main-cart__footer .sum .price {
+        font-size: 30px;
+        vertical-align: bottom;
+        line-height: 37px; }
+        .main-cart__footer .sum .price i {
+          font-size: 26px;
+          margin-left: 3px;
+          vertical-align: -1px; }
+
+.del {
+  cursor: pointer;
+  width: 39px;
+  height: 39px;
+  line-height: 37px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #e93a3a;
+  font-family: Halvetica, Arial;
+  font-size: 18px;
+  color: #e93a3a; }
+
+.btn-group .btn:first-child {
+  margin-right: 10px; }
+
 /*-------------------------------------------------*/
 /*  helper classes
 /*-------------------------------------------------*/
@@ -4797,6 +4871,9 @@ a {
 
 .dt {
   display: table; }
+
+.dtr {
+  display: table-row; }
 
 .dtc {
   display: table-cell; }
@@ -4932,21 +5009,21 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     height: 43px;
-    line-height: 43px; }
+    line-height: 33px; }
     .btn--blue:active, .btn--gray:active, .btn--blue:active {
       padding-top: 10px;
       height: 43px;
-      line-height: 33px;
+      line-height: 23px;
       padding-bottom: 0; }
   .btn--blue {
-    line-height: 45px;
+    line-height: 35px;
     height: 45px; }
     .btn--blue:active {
       height: 45px;
-      line-height: 35px; }
+      line-height: 25px; }
   .callback-form .btn.btn--gray, .callback-form .btn.btn--blue {
     line-height: 53px;
-    height: 53px; }
+    height: 63px; }
     .callback-form .btn.btn--gray:active, .callback-form .btn.btn--blue:active {
       line-height: 43px; }
   h2, .h2 {
@@ -5201,6 +5278,44 @@ a {
     display: none !important; } }
 
 @media screen and (max-width: 767px) {
+  .main-cart__table {
+    overflow: hidden;
+    display: block;
+    border: none; }
+    .main-cart__table .counter button {
+      height: 30px;
+      width: 30px;
+      line-height: 28px; }
+    .main-cart__table .dtr, .main-cart__table .dtc, .main-cart__table .table-body {
+      width: 100%;
+      text-align: center;
+      text-align-last: center;
+      border: none;
+      display: block;
+      padding: 5px;
+      font-size: 13px; }
+      .main-cart__table .dtr .price, .main-cart__table .dtc .price, .main-cart__table .table-body .price {
+        font-size: 18px; }
+      .main-cart__table .dtr i, .main-cart__table .dtc i, .main-cart__table .table-body i {
+        font-size: 16px; }
+    .main-cart__table .dtr {
+      position: relative;
+      margin-bottom: 15px;
+      border: 1px solid #efefef;
+      float: left;
+      width: 49%;
+      margin-right: 2%; }
+      .main-cart__table .dtr .del {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0; }
+      .main-cart__table .dtr:first-child {
+        margin-top: 0; }
+      .main-cart__table .dtr:nth-child(2n+2) {
+        margin-right: 0; }
+    .main-cart__table .table-header {
+      display: none; }
   .xs-hidden {
     display: none; }
   .js-reviews-column {
@@ -5331,6 +5446,16 @@ a {
       font-size: 10px; } }
 
 @media screen and (max-width: 480px) {
+  .main-cart .dtr {
+    width: 100%; }
+  .main-cart__footer {
+    text-align: center;
+    text-align-last: center; }
+    .main-cart__footer .btn {
+      width: 100%;
+      margin-bottom: 10px; }
+    .main-cart__footer .sum {
+      padding: 15px 0; }
   h2, .h2 {
     font-size: 30px;
     line-height: 1.3em; }
@@ -5340,10 +5465,12 @@ a {
     .btn--submit:active {
       line-height: 0; }
   .first-screen .callback-form .btn--gray, .first-screen .callback-form .btn--blue {
-    height: 43px;
+    height: 53px;
     line-height: 43px; }
     .first-screen .callback-form .btn--gray i, .first-screen .callback-form .btn--blue i {
       font-size: 28px; }
+    .first-screen .callback-form .btn--gray:active, .first-screen .callback-form .btn--blue:active {
+      line-height: 33px; }
   .logo {
     width: 70px; }
   .main-header__top {
