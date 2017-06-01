@@ -83,6 +83,9 @@
                     <label class="form-label"><span class="input-name">Ваше имя</span>
                       <input name="name" type="text" placeholder="Артем" class="input input--default"><span class="line"></span>
                     </label>
+                    <label class="form-label"><span class="input-name">Когда вам позвонить</span>
+                      <input name="date" type="text" placeholder="Сегодня" class="input input--default"><span class="line"></span>
+                    </label>
                     <label class="form-label"><span class="input-name">Телефон</span>
                       <input name="phone" type="text" placeholder="+ 7 978 705 05 05" class="input input--default"><span class="line"></span>
                     </label>
@@ -105,13 +108,12 @@
         <div class="container">
           <div class="scope">
             <h2>Области <br> применения</h2>
-            <p class="afthdr">После нанесения HydroProtect на поверхность, которую вы желаете защитить, гидрофобное покрытие вступает с ней в реакцию</p>
             <ul class="scope__list">
-              <li class="scope__item"><span class="image"><img src="img/scope-item1.png" alt="Лобовое стекло"></span><span class="name">Лобовое <br> стекло</span></li>
-              <li class="scope__item"><span class="image"><img src="img/scope-item2.png" alt="Лобовое стекло"></span><span class="name">Зеркала</span></li>
-              <li class="scope__item"><span class="image"><img src="img/scope-item3.png" alt="Лобовое стекло"></span><span class="name">Фара</span></li>
-              <li class="scope__item"><span class="name">Кузов <br> автомобиля</span><span class="image"><img src="img/scope-item4.png" alt="Лобовое стекло"></span></li>
-              <li class="scope__item"><span class="name">Колесо <br> автомобиля</span><span class="image"><img src="img/scope-item5.png" alt="Лобовое стекло"></span></li>
+              <li class="scope__item tip-container"><span class="tip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam, eius optio provident! Aspernatur ut sequi, fugiat, iure provident dolor quam, molestias architecto ab quo esse. Aspernatur eaque consequatur accusantium.</span><span class="image"><img src="img/scope-item1.png" alt="Лобовое стекло"></span><span class="name">Лобовое <br> стекло</span></li>
+              <li class="scope__item tip-container"><span class="tip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sint ex, modi doloremque, voluptatum vel quasi omnis aperiam repellat beatae hic, quos sapiente necessitatibus magni! Nam nisi facere veritatis consequuntur.</span><span class="image"><img src="img/scope-item2.png" alt="Лобовое стекло"></span><span class="name">Зеркала</span></li>
+              <li class="scope__item tip-container"><span class="tip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugit nulla nemo impedit adipisci cupiditate perferendis debitis aliquid accusamus eveniet animi delectus atque ullam quaerat harum, id! Cum, eveniet, velit.</span><span class="image"><img src="img/scope-item3.png" alt="Лобовое стекло"></span><span class="name">Фара</span></li>
+              <li class="scope__item tip-container"><span class="tip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque nulla explicabo repellat iure rem minima quisquam, tenetur facere temporibus earum illo, quaerat. Laboriosam reprehenderit harum, officia quos est! Quo, velit.</span><span class="name">Кузов <br> автомобиля</span><span class="image"><img src="img/scope-item4.png" alt="Лобовое стекло"></span></li>
+              <li class="scope__item tip-container"><span class="tip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolores officia iure, dolor pariatur, ipsam corrupti animi in aperiam porro sequi ratione id quis, beatae ad accusantium est quibusdam sunt?</span><span class="name">Колесо <br> автомобиля</span><span class="image"><img src="img/scope-item5.png" alt="Лобовое стекло"></span></li>
             </ul>
           </div>
         </div>
@@ -209,7 +211,7 @@
                 <div class="dtc"><span class="num"></span></div>
                 <div class="dtc">
                   <p>Позвонить нам по номеру телефона</p>
-                  <p><b>+7 (978) 705-05-05</b></p>
+                  <p><a href="+79787050505"><b>+7 (978) 705-05-05</b></a> </p>
                 </div>
               </li>
               <li class="dt">
@@ -233,6 +235,9 @@
                     </label>
                     <label class="form-label"><span class="input-name">Телефон</span>
                       <input name="phone" type="text" placeholder="+ 7 978 705 05 05" class="input input--default"><span class="line"></span>
+                    </label>
+                    <label class="form-label"><span class="input-name">Когда вам позвонить</span>
+                      <input name="date" type="text" placeholder="Сегодня" class="input input--default"><span class="line"></span>
                     </label>
                     <label class="form-label"><span class="input-name">Удобное время для связи</span>
                       <input name="time" type="text" placeholder="10:00" class="input input--default"><span class="line"></span>
@@ -287,15 +292,15 @@
                 <div class="products__item">
                   <div class="image"><img src="img/product-image.png" alt=""></div>
                   <div class="text">
-                    <p class="md-text"><b>HydroProtect</b></p>
+                    <p class="md-text product-name"><b>HydroProtect</b></p>
                     <p class="desc">Надежная защита вашего автомобиля!</p>
                     <div class="products__price">
                       <div class="counter">
                         <button class="dec">-</button><span class="val">1</span>
                         <button class="inc">+</button>
-                      </div><span class="price-val">1300 <i class="icon-rouble"></i></span>
+                      </div><span class="price-val"><span class="val" data-price-by-one="1300">1300</span> <i class="icon-rouble"></i></span>
                     </div>
-                    <div class="products__footer"><a href="#" class="btn btn--blue">Купить в 1 клик</a><a href="#" class="btn btn--gray fl-right">В корзину</a></div>
+                    <div class="products__footer"><a href="#addOneClick" class="btn btn--blue">Купить в 1 клик</a><a href="#addToCart" class="btn btn--gray fl-right">В корзину</a></div>
                   </div>
                 </div>
               </div>
@@ -303,15 +308,15 @@
                 <div class="products__item">
                   <div class="image"><img src="img/product-image.png" alt=""></div>
                   <div class="text">
-                    <p class="md-text"><b>HydroProtect</b></p>
+                    <p class="md-text product-name"><b>HydroProtect</b></p>
                     <p class="desc">Надежная защита вашего автомобиля!</p>
                     <div class="products__price">
                       <div class="counter">
                         <button class="dec">-</button><span class="val">1</span>
                         <button class="inc">+</button>
-                      </div><span class="price-val">1300 <i class="icon-rouble"></i></span>
+                      </div><span class="price-val"><span class="val" data-price-by-one="1300">1300</span> <i class="icon-rouble"></i></span>
                     </div>
-                    <div class="products__footer"><a href="#" class="btn btn--blue">Купить в 1 клик</a><a href="#" class="btn btn--gray fl-right">В корзину</a></div>
+                    <div class="products__footer"><a href="#addOneClick" class="btn btn--blue">Купить в 1 клик</a><a href="#addToCart" class="btn btn--gray fl-right">В корзину</a></div>
                   </div>
                 </div>
               </div>
@@ -319,15 +324,15 @@
                 <div class="products__item">
                   <div class="image"><img src="img/product-image.png" alt=""></div>
                   <div class="text">
-                    <p class="md-text"><b>HydroProtect</b></p>
+                    <p class="md-text product-name"><b>HydroProtect</b></p>
                     <p class="desc">Надежная защита вашего автомобиля!</p>
                     <div class="products__price">
                       <div class="counter">
                         <button class="dec">-</button><span class="val">1</span>
                         <button class="inc">+</button>
-                      </div><span class="price-val">1300 <i class="icon-rouble"></i></span>
+                      </div><span class="price-val"><span class="val" data-price-by-one="1300">1300</span> <i class="icon-rouble"></i></span>
                     </div>
-                    <div class="products__footer"><a href="#" class="btn btn--blue">Купить в 1 клик</a><a href="#" class="btn btn--gray fl-right">В корзину</a></div>
+                    <div class="products__footer"><a href="#addOneClick" class="btn btn--blue">Купить в 1 клик</a><a href="#addToCart" class="btn btn--gray fl-right">В корзину</a></div>
                   </div>
                 </div>
               </div>
@@ -408,7 +413,7 @@
                   </div>
                 </div>
                 <div class="reviews-navigations">
-                  <div id="navReviews"><a href="#" class="btn btn--blue">Добавить отзыв</a>
+                  <div id="navReviews"><a href="#addReview" class="fancybox btn btn--blue">Добавить отзыв</a>
                     <div class="slider-controls fl-right">
                       <button class="prev"><i class="icon-artl"></i></button>
                       <button class="next"><i class="icon-artr"></i></button>
@@ -443,7 +448,7 @@
                   </div>
                 </div>
                 <div class="reviews-navigations">
-                  <div id="navVideoReviews"><a href="#" class="btn btn--blue">Добавить отзыв</a>
+                  <div id="navVideoReviews"><a href="#addReviewVideo" class="fancybox btn btn--blue">Добавить отзыв</a>
                     <div class="slider-controls fl-right">
                       <button class="prev"><i class="icon-artl"></i></button>
                       <button class="next"><i class="icon-artr"></i></button>
@@ -479,13 +484,13 @@
               </li>
               <li>
                 <p class="title">КОНТАКТЫ</p>
-                <p class="phone"><b>8 (352) 11-22-333</b></p><a href="mailto:info@domen.ru">info@domen.ru</a>
+                <p class="phone"><b><a href="+73521122332">8 (352) 11-22-333</a></b></p><a href="mailto:info@domen.ru">info@domen.ru</a>
                 <a href="www.vk.com">www.vk.com</a>
               </li>
               <li>
                 <p class="title">График работы</p>
                 <p class="time">Пн-ВС, 07:00-22:00</p>
-                <p>Без выходных</p><a href="#" class="btn btn--blue">Задать вопрос</a>
+                <p>Без выходных</p><a href="#questPopup" class="fancybox btn btn--blue">Задать вопрос</a>
               </li>
             </ul>
           </div>
@@ -528,6 +533,107 @@
         </div>
       </div>
       <!-- /footer-->
+      <!--popups-->
+      <div id="addOneClick" class="add--one-click hidden">
+        <form action="#" class="popup">
+          <input type="hidden" name="product_name" value="">
+          <input type="hidden" name="product_col" value="">
+          <input type="hidden" name="product_price" value="">
+          <div class="popup__header">
+            <p>
+               
+              Заказ в 1 клик<span class="product_name"></span>
+            </p>
+          </div>
+          <div class="popup__body">
+            <p class="desc">Оставьте свои контактные данные. Наши менеджеры свяжутся с вами для уточнения деталей заказа.</p>
+            <label class="form-label">
+              <input type="text" name="name" placeholder="Ваше имя" class="input input--default"><span class="line"></span>
+            </label>
+            <label class="form-label">
+              <input type="text" name="phone" placeholder="Телефон" class="input input--default"><span class="line"></span>
+            </label>
+            <label class="form-label">
+              <textarea name="comment" placeholder="Комментарий" class="input input--default"></textarea><span class="line"></span>
+            </label>
+          </div>
+          <div class="popup__footer">
+            <button type="submit" class="btn btn--blue">Отправить заказ</button>
+          </div>
+        </form>
+      </div>
+      <div id="addToCart" class="add--tocart hidden">
+        <div class="popup">
+          <div class="popup__body">
+            <p class="success-message">Товар успешно добавлен в корзину</p>
+            <div class="dt">
+              <div class="dtc">
+                <div class="image"><img src="img/product-image.png" alt=""></div>
+              </div>
+              <div class="dtc">
+                <div class="name">Пылесос пылысосный 9400 ультра вдун</div>
+                <p class="price"><span class="col"></span><span class="val">1000</span> р.</p>
+              </div>
+            </div>
+          </div>
+          <div class="popup__footer"><a href="#" class="btn btn--blue">Оформить заказ</a><a href="#" class="btn btn--gray fl-right fancy-close">Продолжить покупки</a></div>
+        </div>
+      </div>
+      <div id="addReview" class="hidden">
+        <form action="#" class="popup">
+          <div class="popup__header">
+            <p>добавление отзыва</p>
+          </div>
+          <div class="popup__body">
+            <label class="form-label">
+              <input type="text" require name="name" placeholder="Ваше имя" class="input input--default"><span class="line"></span>
+            </label>
+            <label class="form-label">
+              <textarea name="comment" require placeholder="Комментарий" class="input input--default"></textarea><span class="line"></span>
+            </label>
+          </div>
+          <div class="popup__footer"><a href="#" class="btn btn--blue">Отправить</a></div>
+        </form>
+      </div>
+      <div id="addReviewVideo" class="hidden">
+        <form action="#" class="popup">
+          <div class="popup__header">
+            <p>добавление видео отзыва</p>
+          </div>
+          <div class="popup__body">
+            <label class="form-label">
+              <input type="text" require name="name" placeholder="Ваше имя" class="input input--default"><span class="line"></span>
+            </label>
+            <label class="form-label">
+              <input type="text" require name="name" placeholder="Ссылка на youtube" class="input input--default"><span class="line"></span>
+            </label>
+          </div>
+          <div class="popup__footer"><a href="#" class="btn btn--blue">Отправить</a></div>
+        </form>
+      </div>
+      <div id="questPopup" class="hidden">
+        <form action="#" class="popup">
+          <div class="popup__header">
+            <p>Задать вопрос</p>
+          </div>
+          <div class="popup__body">
+            <p class="desc">Оставьте свои контактные данные. Наши менеджеры свяжутся с вами.</p>
+            <label class="form-label">
+              <input type="text" require name="name" placeholder="Ваше имя" class="input input--default"><span class="line"></span>
+            </label>
+            <label class="form-label">
+              <input type="tel" require name="phone" placeholder="Ваш телефон" class="input input--default"><span class="line"></span>
+            </label>
+            <label class="form-label">
+              <input type="text" require name="email" placeholder="Электронная почта" class="input input--default"><span class="line"></span>
+            </label>
+            <label class="form-label">
+              <textarea name="comment" require placeholder="Ваш вопрос" class="input input--default"></textarea><span class="line"></span>
+            </label>
+          </div>
+          <div class="popup__footer"><a href="#" class="btn btn--blue">Отправить</a></div>
+        </form>
+      </div>
     </div>
     <!--scripts =================================================-->
     <script src="js/core.js"></script>

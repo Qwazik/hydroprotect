@@ -65,92 +65,82 @@
       <div class="inner">
         <div class="inner__header">
           <div class="container">
-            <h1>Корзина</h1>
+            <h1>Оформлени заказа</h1>
           </div>
         </div>
         <div class="inner__body">
-          <!-- cart-->
-          <div class="main-cart">
+          <div class="order">
             <div class="container">
-              <div class="dt main-cart__table">
-                <div class="dtr table-header">
-                  <div class="dtc">Фото</div>
-                  <div class="dtc">Код товара</div>
-                  <div class="dtc">Наименование</div>
-                  <div class="dtc">Количество</div>
-                  <div class="dtc">Сумма</div>
-                  <div class="dtc">Удалить</div>
+              <div class="row">
+                <div class="col-33 pull-right">
+                  <form action="#">
+                    <label class="form-label"><span class="input-name">Ваше имя</span>
+                      <input type="text" name="name" placeholder="Ваше имя" class="input input--default"><span class="line"></span>
+                    </label>
+                    <label class="form-label"><span class="input-name">Номер телефона</span>
+                      <input type="tel" name="phone" placeholder="Ваш телефон" class="input input--default"><span class="line"></span>
+                    </label>
+                    <label class="form-label"><span class="input-name">Email</span>
+                      <input type="email" name="" placeholder="Email" class="input input--default"><span class="line"></span>
+                    </label>
+                    <label class="form-label"><span class="input-name">Адрес доставки</span>
+                      <input type="address" placeholder="Ваше имя" class="input input--default"><span class="line"></span>
+                    </label>
+                    <label class="form-label"><span class="input-name">Комментарий</span>
+                      <textarea type="text" name="comment" placeholder="Комментарий" class="input input--default"></textarea><span class="line"></span>
+                    </label>
+                    <div class="clearfix"><br><br><a href="#" class="btn btn--blue fl-right w100p">Отправить</a></div>
+                  </form>
                 </div>
-                <div class="table-body">
-                  <div class="dtr">
-                    <div class="dtc"><img src="img/cart-image.png" alt=""></div>
-                    <div class="dtc">34568</div>
-                    <div class="dtc">hydroProtect <br> 250 ml</div>
-                    <div class="dtc">
-                      <div class="counter">
-                        <button class="dec">-</button><span class="val">1</span>
-                        <button class="inc">+</button>
+                <div class="col-66 pull-left">
+                  <div class="dt order-table">
+                    <div class="table-body">
+                      <div class="dtr">
+                        <div class="dtc"><img src="img/cart-image.png" alt=""></div>
+                        <div class="dtc">hydroProtect <br> 250 ml</div>
+                        <div class="dtc">
+                          <div class="counter"><span class="val">1</span></div>
+                        </div>
+                        <div class="dtc"><span class="price">1280 </span><i class="icon-rouble"></i></div>
                       </div>
-                    </div>
-                    <div class="dtc"><span class="price">1280 </span><i class="icon-rouble"></i></div>
-                    <div class="dtc">
-                      <button class="del">×</button>
-                    </div>
-                  </div>
-                  <div class="dtr">
-                    <div class="dtc"><img src="img/cart-image.png" alt=""></div>
-                    <div class="dtc">34568</div>
-                    <div class="dtc">hydroProtect <br> 250 ml</div>
-                    <div class="dtc">
-                      <div class="counter">
-                        <button class="dec">-</button><span class="val">1</span>
-                        <button class="inc">+</button>
+                      <div class="dtr">
+                        <div class="dtc"><img src="img/cart-image.png" alt=""></div>
+                        <div class="dtc">hydroProtect <br> 250 ml</div>
+                        <div class="dtc">
+                          <div class="counter"><span class="val">1</span></div>
+                        </div>
+                        <div class="dtc"><span class="price">1280 </span><i class="icon-rouble"></i></div>
                       </div>
-                    </div>
-                    <div class="dtc"><span class="price">1280 </span><i class="icon-rouble"></i></div>
-                    <div class="dtc">
-                      <button class="del">×</button>
-                    </div>
-                  </div>
-                  <div class="dtr">
-                    <div class="dtc"><img src="img/cart-image.png" alt=""></div>
-                    <div class="dtc">34568</div>
-                    <div class="dtc">hydroProtect <br> 250 ml</div>
-                    <div class="dtc">
-                      <div class="counter">
-                        <button class="dec">-</button><span class="val">1</span>
-                        <button class="inc">+</button>
+                      <div class="dtr">
+                        <div class="dtc"><img src="img/cart-image.png" alt=""></div>
+                        <div class="dtc">hydroProtect <br> 250 ml</div>
+                        <div class="dtc">
+                          <div class="counter"><span class="val">1</span></div>
+                        </div>
+                        <div class="dtc"><span class="price">1280 </span><i class="icon-rouble"></i></div>
                       </div>
-                    </div>
-                    <div class="dtc"><span class="price">1280 </span><i class="icon-rouble"></i></div>
-                    <div class="dtc">
-                      <button class="del">×</button>
-                    </div>
-                  </div>
-                  <div class="dtr">
-                    <div class="dtc"><img src="img/cart-image.png" alt=""></div>
-                    <div class="dtc">34568</div>
-                    <div class="dtc">hydroProtect <br> 250 ml</div>
-                    <div class="dtc">
-                      <div class="counter">
-                        <button class="dec">-</button><span class="val">1</span>
-                        <button class="inc">+</button>
+                      <div class="dtr">
+                        <div class="dtc"><img src="img/cart-image.png" alt=""></div>
+                        <div class="dtc">hydroProtect <br> 250 ml</div>
+                        <div class="dtc">
+                          <div class="counter"><span class="val">1</span></div>
+                        </div>
+                        <div class="dtc"><span class="price">1280 </span><i class="icon-rouble"></i></div>
                       </div>
-                    </div>
-                    <div class="dtc"><span class="price">1280 </span><i class="icon-rouble"></i></div>
-                    <div class="dtc">
-                      <button class="del">×</button>
+                      <div class="dtr order-table__footer ta-center">
+                        <div class="dtc">Итого</div>
+                        <div class="dtc"></div>
+                        <div class="dtc">5</div>
+                        <div class="dtc">
+                          <div class="sum"><span>Итого: </span><span class="price"> <span>3280 </span><i class="icon-rouble"></i></span></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="main-cart__footer">
-                <div class="sum"><span>Итого: </span><span class="price"> <span>3280</span><i class="icon-rouble"></i></span></div>
-                <div class="btn-group"><a href="#" class="btn btn--gray">продолжить покупки</a><a href="order.html" class="btn btn--blue">оформить заказ</a></div>
               </div>
             </div>
           </div>
-          <!-- /cart-->
         </div>
       </div>
       <!--footer-->
