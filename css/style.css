@@ -5599,6 +5599,8 @@ a {
     vertical-align: middle; }
   .order-table__footer .icon-rouble {
     font-size: 18px; }
+  .order-table__footer--mobile {
+    display: none; }
 
 /*-------------------------------------------------*/
 /*  helper classes
@@ -6023,6 +6025,18 @@ a {
     display: none !important; } }
 
 @media screen and (max-width: 767px) {
+  .order {
+    padding-bottom: 0; }
+  .order-table__footer--mobile {
+    padding: 30px 0;
+    font-size: 20px;
+    display: block;
+    text-align: center; }
+    .order-table__footer--mobile .price {
+      font-size: 30px;
+      font-weight: bold; }
+    .order-table__footer--mobile .sum > span {
+      display: block !important; }
   .inner__header {
     padding: 30px 0; }
     .inner__header h1 {

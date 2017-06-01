@@ -16,6 +16,13 @@ $(function() {
 		return false;
 	});
 
+	(function(){
+		var orderFooter = $('.order-table__footer');
+		var orderFooterMobile = $('<div class="order-table__footer--mobile"></div>');
+		orderFooterMobile.append(orderFooter.find('.sum'));
+		orderFooterMobile.insertAfter($('.order-table'));
+	}());
+
 	$('.fancy-close').click(function(){
 		$.fancybox.close(true);
 		return false;
